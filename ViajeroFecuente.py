@@ -15,13 +15,14 @@ class Viajero:
          
 
     
-
+    def getNombre(self):
+        return self.__nombre
     def getNumero(self):
         return self.__numviajero
     def getMillas(self):
         return self.__millas
                 
-   
+
     def cantidadTotaldeMillas(self):
         return 'Cantidad de millas realizadas \n' + str(self.__millas)
     
@@ -43,4 +44,5 @@ class Viajero:
             Valor = True 
         return Valor
 
+    def __
         
