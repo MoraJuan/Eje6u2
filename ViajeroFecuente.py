@@ -13,16 +13,14 @@ class Viajero:
          self.__apellido = apellido
          self.__millas = millas
          
-
+    def __str__(self):
+        return str(self.__numviajero, self.__millas)
     
-    def getNombre(self):
-        return self.__nombre
+
     def getNumero(self):
         return self.__numviajero
-    def getMillas(self):
-        return self.__millas
                 
-
+   
     def cantidadTotaldeMillas(self):
         return 'Cantidad de millas realizadas \n' + str(self.__millas)
     
@@ -37,12 +35,4 @@ class Viajero:
         else:
             print('No es posible el cambio las millas a canjear son mayores a las millas totales')
         return self.__millas
-
-    def __gt__(self, other):
-        Valor = False
-        if(self.__millas > other.getMillas()):
-            Valor = True 
-        return Valor
-
-    def __
         
